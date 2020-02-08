@@ -1,0 +1,11 @@
+﻿Task 2 – Entity Framework (PhoneBookv1)
+
+Design and implement a console application which allows adding, updating, and deleting of data in a phone book database. 
+Use the Entity Framework for this purpose, Code First approach. A SQL Server Express LocalDB will suffice. 
+Each entry in the phone book contains a phone number (unique), a name, and an address. Have the application insert, update, 
+and delete entries, and provide the following queries:
+
+1. Report the full contents of the phone book in name order
+2. Report the name and address for specified phone number.
+3. Report phone numbers and addresses matching a specified name.
+
