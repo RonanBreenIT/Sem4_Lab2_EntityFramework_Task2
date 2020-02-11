@@ -96,7 +96,8 @@ namespace Sem4_Lab2_EntityFramework_Task2
                     //Loop to look for a match based on name
                     if (found != null)
                     {
-                        db.Phonebooks.Remove(contact);
+                        db.Phonebooks.Remove(found);
+                        Console.WriteLine("Deleting Contact: " + found.Name);
                         db.SaveChanges();
                         //throw new ArgumentException("Contact could not be found");
                     }
@@ -134,9 +135,7 @@ namespace Sem4_Lab2_EntityFramework_Task2
                 }
                 else
                 {
-
-                    Console.WriteLine("\n---- Contact Found -----");
-                    Console.WriteLine("\nContact Name: " + findContact.Name + "\nContact Number: " + findContact.Number + "\nAddress: " + findContact.Address);
+                    Console.WriteLine("Found Number: " + "\nContact Name: " + findContact.Name + "\nContact Number: " + findContact.Number + "\nAddress: " + findContact.Address);
                 }
             }
         }
@@ -148,14 +147,14 @@ namespace Sem4_Lab2_EntityFramework_Task2
             {
                 foreach (Phonebook item in db.Phonebooks)
                 {
-                    var locateName = db.Phonebooks.Select(c => c.Name == contact.Name);
+                    var locateName = db.Phonebooks.FirstOrDefault(c => c.Name == contact.Name);
                     if (locateName == null)
                     {
                         Console.WriteLine("No matching contact name in the Phonebook");
                     }
                     else
                     {
-                        Console.WriteLine("\nContact Name: " + item.Name + "\nContact Number: " + item.Number + "\nAddress: " + item.Address);
+                        Console.WriteLine("Found Name: " + "\nContact Name: " + item.Name + "\nContact Number: " + item.Number + "\nAddress: " + item.Address);
                     }
                 }
    
