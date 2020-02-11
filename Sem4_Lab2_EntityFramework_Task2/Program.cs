@@ -25,14 +25,8 @@ namespace Sem4_Lab2_EntityFramework_Task2
             repo.InsertPhonebook(p2);
             repo.InsertPhonebook(p3);
             //phCtx.Phonebooks.Add(p1);
-            //phCtx.Phonebooks.Add(p2);
+            //p1.InsertPhonebook(p1);
 
-            // test can retrieve all db.Phonebooks items
-            //var x = phCtx.Phonebooks.Select(p => p);
-            //foreach (Phonebook item in x)
-            //{
-            //    Console.WriteLine("\nContact Name: " + item.Name + "\nContact Number: " + item.Number + "\nAddress: " + item.Address);
-            //}
 
             // Test can update Phonebook contact
             repo.UpdatePhonebookContact(new Phonebook { Name = "Ronan", Number = "09812270809", Address = "3 Main Sreet", PhoneID = 1 });
@@ -49,7 +43,7 @@ namespace Sem4_Lab2_EntityFramework_Task2
             // Report contact details by name
             repo.FindName(p1);
 
-
+            
         }
     }
 }
