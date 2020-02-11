@@ -5,7 +5,6 @@ C:\Users\User\source\repos\Sem4_Lab2_EntityFramework_Task2\Sem4_Lab2_EntityFrame
 C:\Users\User\source\repos\Sem4_Lab2_EntityFramework_Task2\Sem4_Lab2_EntityFramework_Task2\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\User\source\repos\Sem4_Lab2_EntityFramework_Task2\Sem4_Lab2_EntityFramework_Task2\bin\Debug\EntityFramework.xml
 C:\Users\User\source\repos\Sem4_Lab2_EntityFramework_Task2\Sem4_Lab2_EntityFramework_Task2\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\User\source\repos\Sem4_Lab2_EntityFramework_Task2\Sem4_Lab2_EntityFramework_Task2\obj\Debug\Sem4_Lab2_EntityFramework_Task2.csprojAssemblyReference.cache
 C:\Users\User\source\repos\Sem4_Lab2_EntityFramework_Task2\Sem4_Lab2_EntityFramework_Task2\obj\Debug\Sem4_Lab2_EntityFramework_Task2.csproj.CopyComplete
 C:\Users\User\source\repos\Sem4_Lab2_EntityFramework_Task2\Sem4_Lab2_EntityFramework_Task2\obj\Debug\Sem4_Lab2_EntityFramework_Task2.exe
 C:\Users\User\source\repos\Sem4_Lab2_EntityFramework_Task2\Sem4_Lab2_EntityFramework_Task2\obj\Debug\Sem4_Lab2_EntityFramework_Task2.pdb

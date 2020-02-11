@@ -41,6 +41,8 @@ namespace Sem4_Lab2_EntityFramework_Task2
             repo.FindNumber(p2);
 
             // Report contact details by name
+            Phonebook p4 = new Phonebook("888888888", "Ronan", "6 Main Street");
+            p4.InsertPhonebook(p4); // To test it finds all "Ronans"
             repo.FindName(p1);
 
             
