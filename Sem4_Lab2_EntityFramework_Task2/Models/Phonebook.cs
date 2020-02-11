@@ -135,7 +135,7 @@ namespace Sem4_Lab2_EntityFramework_Task2
                 }
                 else
                 {
-                    Console.WriteLine("Found Number: " + "\nContact Name: " + findContact.Name + "\nContact Number: " + findContact.Number + "\nAddress: " + findContact.Address);
+                    Console.WriteLine("\nFound Number: " + "\nContact Name: " + findContact.Name + "\nContact Number: " + findContact.Number + "\nAddress: " + findContact.Address);
                 }
             }
         }
@@ -145,16 +145,16 @@ namespace Sem4_Lab2_EntityFramework_Task2
         {
             using (PhonebookContext db = new PhonebookContext()) 
             {
-                foreach (Phonebook item in db.Phonebooks)
-                {
-                    var locateName = db.Phonebooks.FirstOrDefault(c => c.Name == contact.Name);
+                var locateName = db.Phonebooks.Where(c => c.Name == contact.Name);
+                foreach (Phonebook item in locateName)
+                {   
                     if (locateName == null)
                     {
                         Console.WriteLine("No matching contact name in the Phonebook");
                     }
                     else
                     {
-                        Console.WriteLine("Found Name: " + "\nContact Name: " + item.Name + "\nContact Number: " + item.Number + "\nAddress: " + item.Address);
+                        Console.WriteLine("\nFound Name: " + "\nContact Name: " + item.Name + "\nContact Number: " + item.Number + "\nAddress: " + item.Address);
                     }
                 }
    
