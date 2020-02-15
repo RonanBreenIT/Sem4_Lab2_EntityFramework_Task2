@@ -44,10 +44,6 @@ namespace Sem4_Lab2_EntityFramework_Task2
         {
 
         }
-
-
-
-        // Void to Insert
         public void InsertPhonebook(Phonebook _contact)
         {
             using (PhonebookContext db = new PhonebookContext())
@@ -64,8 +60,6 @@ namespace Sem4_Lab2_EntityFramework_Task2
             }
         }
 
-
-        // Void to Update
         public void UpdatePhonebookContact(Phonebook contact)
         {
             using (PhonebookContext db = new PhonebookContext())
@@ -85,7 +79,6 @@ namespace Sem4_Lab2_EntityFramework_Task2
             }
         }
 
-        // Delete Contact
         public void DeleteContact(Phonebook contact)
         {
             using (PhonebookContext db = new PhonebookContext())
