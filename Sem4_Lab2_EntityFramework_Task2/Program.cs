@@ -19,14 +19,10 @@ namespace Sem4_Lab2_EntityFramework_Task2
             Phonebook p2 = new Phonebook("1111111111", "Rick", "2 Main Street");
             Phonebook p3 = new Phonebook("1122211111", "Rachel", "5 Main Street");
 
-
             // Test can add instance to PhoneBooks db
             repo.InsertPhonebook(p1);
             repo.InsertPhonebook(p2);
             repo.InsertPhonebook(p3);
-            //phCtx.Phonebooks.Add(p1);
-            //p1.InsertPhonebook(p1);
-
 
             // Test can update Phonebook contact
             repo.UpdatePhonebookContact(new Phonebook { Name = "Ronan", Number = "09812270809", Address = "3 Main Sreet", PhoneID = 1 });
@@ -44,8 +40,6 @@ namespace Sem4_Lab2_EntityFramework_Task2
             Phonebook p4 = new Phonebook("888888888", "Ronan", "6 Main Street");
             p4.InsertPhonebook(p4); // To test it finds all "Ronans"
             repo.FindName(p1);
-
-            
         }
     }
 }
